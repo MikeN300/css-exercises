@@ -1,0 +1,50 @@
+.flexbox {
+	display: flex;
+	height: 200px;
+	width: 600px;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.inner {
+	border-style: double;
+	color: blue;
+	height: 50px;
+}
+.nav-list {
+	display: flex; 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	justify-content: center;
+	gap: 1rem;
+}
+.nav-list li {
+	/*flex-grow: 1;*/
+}
+
+header {
+	border-style: dashed;
+	border-width: 5px;
+}
+ul li {
+	border-style: double;
+	border-width: 2px;
+}
+.card {
+	background-color:aqua;
+}
+.columns {
+	display: flex;
+	/* flex-direction: column; */
+	gap: 2rem;
+	border: 10px solid firebrick;
+	align-items: baseline;
+}
+@media (min-width: 1000px) {
+	.columns {
+		flex-direction: row;
+	}
+ }
+.columns > * {
+	flex-basis: 100%
+}
